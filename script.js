@@ -3,9 +3,11 @@ var jsPressed = document.getElementById('jspressed');
 var jsCode = document.getElementById('jscode');
 var jsName = document.getElementById('jsname');
 var themeSwitch = document.getElementsByClassName('bot-tema')[0];
+var lua = document.getElementById('lua');
+var sol = document.getElementById('sol');
 
 var bodyClass = document.body.classList;
-var atual = 'modo-claro';
+var atual = 'modo-claro'
 bodyClass.add(atual);
 
 
@@ -17,8 +19,10 @@ themeSwitch.addEventListener('click', function() {
   } else {
     bodyClass.remove('modo-escuro');
     bodyClass.add('modo-claro');
-    atual = 'modo-claro';
+    atual = 'modo-claro'
   }
+  lua.classList.toggle('escondido');
+  sol.classList.toggle('escondido');
 });
 
 document.addEventListener("keydown", function(event) {
