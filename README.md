@@ -12,13 +12,8 @@ Pressione qualquer tecla para ver o valor lido pelo JavaScript.
 
 
 ## Demos
+![demo0](./img/video.webm)
 ![demo1](./img/01.png)
 ![demo2](./img/02.png)
 ![demo3](./img/03.png)
 ![demo4](./img/04.png)
-
-
-
-
-
-
