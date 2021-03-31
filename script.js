@@ -30,3 +30,23 @@ document.addEventListener("keydown", function(event) {
   jsCode.innerHTML = event.keyCode;
   jsName.innerHTML = event.code;
 });
+
+
+
+var modal = document.getElementById('modal-info');
+var botInfo = document.getElementById('bot-info');
+var botClose = document.getElementById('close');
+
+botInfo.onclick = function () {
+  modal.style.display = "block";
+}
+
+botClose.onclick = function () {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
