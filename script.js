@@ -50,3 +50,31 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+var ptLang = document.getElementById('pt-lang');
+var enLang = document.getElementById('en-lang');
+var enClass = document.getElementsByClassName('en')[0];
+var ptClass = document.getElementsByClassName('pt-br')[0];
+var labCode = document.getElementById('label-code');
+var labName = document.getElementById('label-name');
+
+ptLang.onclick = function () {
+  enLang.style.display = "block";
+  ptLang.style.display = "none";
+  jsPressed.innerHTML = "Pressione qualquer tecla...";
+  labCode.innerHTML = "Código JS: ";
+  labName.innerHTML = "Chave JS: ";
+  enClass.style.display = "none";
+  ptClass.style.display = "block";
+}
+
+enLang.onclick = function () {
+  enLang.style.display = "none";
+  ptLang.style.display = "block";
+  jsPressed.innerHTML = "Press any key...";
+  labCode.innerHTML = "Code: ";
+  labName.innerHTML = "Key Code: ";
+  enClass.style.display = "block";
+  ptClass.style.display = "none";
+}

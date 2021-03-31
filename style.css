@@ -58,7 +58,15 @@ a:visited {
   color: inherit;
 }
 
-.botoes {
+.botoes-esquerda {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+}
+
+.botoes-direita {
   position: absolute;
   display: flex;
   top: 10px;
@@ -126,6 +134,8 @@ a:visited {
   width: 300px;
   color: black;
   transition: all 200ms;
+  text-align: left;
+  line-height: 1.5rem;
 
 }
 
@@ -141,4 +151,13 @@ a:visited {
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+#pt-lang {
+  display: none;
+}
+
+#pt-lang,
+#en-lang {
+  cursor: pointer;
 }
